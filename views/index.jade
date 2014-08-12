@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	div.container
+		h1= title
+			form(method='POST',action="/uploadFile",enctype="multipart/form-data")
+				input(type="file", name="fileUpload")
+				input(type='submit', class='btn', value='Submit', id = submitButton)
+
+
+
